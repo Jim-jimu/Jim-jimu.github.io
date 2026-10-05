@@ -657,8 +657,8 @@ p { margin: 0 0 14px; }
 .tag-btn.active { background: #ad7020; color: #fff; border-color: rgba(17,17,17,.62); box-shadow: 0 2px 8px rgba(173,112,32,.22); }
 .tag-count { display: inline-block; width: 18px; height: 18px; line-height: 18px; border-radius: 50%; text-align: center; margin-left: 5px; font-size: 11px; font-weight: 700; background: rgba(251,165,36,.14); }
 .tag-btn.active .tag-count { background: rgba(255,255,255,.22); }
-.publications-list { display: grid; gap: 16px; }
-.publication-card { display: grid; grid-template-columns: 260px minmax(0,1fr); gap: 20px; padding: 20px; border: 1px solid rgba(0,0,0,.14); border-radius: 8px; align-items: center; background: #fff; }
+.publications-list { display: grid; gap: 24px; }
+.publication-card { display: grid; grid-template-columns: 260px minmax(0,1fr); gap: 18px; padding: 0; border: 0; align-items: start; background: #fff; }
 .publication-visual { min-height: 132px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 14px; border: 1px solid #e5dcc9; border-radius: 5px; background: #faf7ed; color: #76542b; text-align: center; }
 .publication-visual .paper-wordmark { font-size: 26px; line-height: 1.2; font-weight: 700; letter-spacing: -.6px; }
 .publication-visual .paper-topic { margin-top: 12px; font-size: 10px; letter-spacing: .13em; text-transform: uppercase; }
@@ -666,6 +666,8 @@ p { margin: 0 0 14px; }
 .publication-visual.topic-decisions { color: #69613d; background: #f7f7ee; border-color: #e0e0c8; }
 .publication-visual.publication-figure { min-height: 0; padding: 0; border: 0; background: #fff; cursor: zoom-in; }
 .publication-figure img { display: block; width: 100%; height: auto; border-radius: 5px; }
+/* Hide only the PDF export's blank top/bottom margins in its thumbnail. */
+.publication-figure img[src$="/methodmate.png"] { aspect-ratio: 2400 / 1160; object-fit: cover; }
 .paper-title { font-size: 14px; font-weight: 700; line-height: 1.45; color: #a86200; margin-bottom: 5px; }
 .paper-title a { font-size: inherit; }
 .publication-authors-shell { margin-bottom: 4px; }
@@ -722,7 +724,7 @@ p { margin: 0 0 14px; }
   .news-entries { padding: 0; }
   .tag-filter { justify-content: flex-start; gap: 7px; }
   .tag-btn { padding: 6px 10px; font-size: 12px; }
-  .publication-card { grid-template-columns: minmax(0,1fr); padding: 16px; gap: 16px; }
+  .publication-card { grid-template-columns: minmax(0,1fr); gap: 12px; }
   .publication-visual { min-height: 92px; }
   .publication-visual .paper-wordmark { font-size: 24px; }
   .publication-visual .paper-topic { margin-top: 8px; }
