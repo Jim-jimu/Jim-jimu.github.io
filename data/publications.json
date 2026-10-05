@@ -33,6 +33,10 @@
     "description": "A literature-grounded LLM system that supports quantitative research proposal design. I developed the full-stack system and contributed to formative research, workflow design, and three user studies.",
     "tags": [],
     "shortTitle": "MethodMate",
+    "image": "assets/publications/methodmate.png",
+    "imageAlt": "MethodMate workflow: proactive conversation guidance, paper search and review, quantitative research proposal generation, evaluation, iteration, and finalization through user–LLM collaboration.",
+    "imageWidth": 2400,
+    "imageHeight": 1604,
     "topic": "HCI × LLMs",
     "topics": [
       "hci",
