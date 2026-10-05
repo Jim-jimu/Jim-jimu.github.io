@@ -60,6 +60,10 @@
       }
     ],
     "shortTitle": "LLM Sycophancy",
+    "image": "assets/publications/sycophancy.png",
+    "imageAlt": "LLM sycophancy study procedure: pre-task surveys, investment and speed-dating decisions with randomly assigned AI feedback conditions, and post-task workload and trust surveys.",
+    "imageWidth": 1512,
+    "imageHeight": 462,
     "topic": "AI × Decisions",
     "topics": [
       "hci",
