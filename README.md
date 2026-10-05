@@ -7,7 +7,7 @@ Personal academic homepage of Yike Jin, an undergraduate at Zhejiang University.
 - Personal blog: https://jinyike.dev/jimjimu-notes/
 - Blog repository and original history: https://github.com/Jim-jimu/jimjimu-notes
 
-Based on [AcaNova-X](https://github.com/yihangtao/AcaNova-X), with its two-column profile, research cards, publication list, and gold/slate visual style. Template source revision: `39b5544`. The homepage uses only local styles, scripts, fonts, and images at runtime.
+Based on [AcaNova-X](https://github.com/yihangtao/AcaNova-X), with its two-column profile, research cards, publication list, and gold/slate visual style. Template source revision: `39b5544`. The homepage uses local styles, scripts, images, and system fonts at runtime. Typography follows [AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io): `Trebuchet MS`, with `Helvetica` and `sans-serif` fallbacks for both headings and body text.
 
 ## Update content
 
@@ -42,4 +42,4 @@ The build renders publications, news, and awards into static HTML, so the academ
 
 - [AcaNova-X](https://github.com/yihangtao/AcaNova-X) by Yihang Tao: original academic homepage template and base stylesheet.
 - Personal content and avatar adapted from the previous Jimjimu website and the owner's supplied CV.
-- Open Sans is distributed under the SIL Open Font License; see `assets/OFL-OpenSans.txt`.
+- [AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io): reference for the sans-serif font stack.
