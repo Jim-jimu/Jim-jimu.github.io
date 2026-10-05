@@ -1,0 +1,11 @@
+{
+  "name": "yike-jin-academic-homepage",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tailwindcss -i assets/tailwind.css -o assets/tailwind.generated.css --minify && node build.mjs",
+    "check": "node --check script.js && node --check build.mjs"
+  },
+  "devDependencies": { "tailwindcss": "3.4.17" }
+}
