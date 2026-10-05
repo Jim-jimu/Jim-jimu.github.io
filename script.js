@@ -100,7 +100,7 @@ async function copyText(text, message) {
   }
 }
 document.querySelector('.email-copy')?.addEventListener('click', () => copyText('yikejin02@gmail.com', 'Email address copied.'));
-document.querySelector('.bio-copy')?.addEventListener('click', () => copyText('Yike Jin is an undergraduate student at Zhejiang University. Research interests include GUI agents, multimodal large language models, and lifelong agent learning. Yike is seeking Ph.D. or M.S. opportunities in Computer Science for Fall 2027.', 'Short biography copied.'));
+document.querySelector('.bio-copy')?.addEventListener('click', () => copyText('Yike Jin is pursuing a Bachelor of Engineering (B.Eng.) in Industrial Design at Zhejiang University. Research interests include GUI agents, multimodal large language models, and lifelong agent learning. Yike is seeking Ph.D. or M.S. opportunities in Computer Science for Fall 2027.', 'Short biography copied.'));
 
 // Preserve links to sections from the previous homepage layout.
 const legacySections = { '#educations': '#education', '#honors': '#awards', '#latest-news': '#news', '#contact': '.mountain-footer' };
