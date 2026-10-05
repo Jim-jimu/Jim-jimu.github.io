@@ -713,7 +713,7 @@ p { margin: 0 0 14px; }
 @media (max-width: 640px) {
   .page-shell { margin: 0 20px; padding-top: 22px; }
   .profile-section { display: flex; flex-direction: column-reverse; gap: 22px; padding-top: 4px; }
-  .profile-portrait { width: 160px; height: 160px; }
+  .profile-portrait { width: 160px; height: auto; }
   .profile-name { margin-bottom: 16px; }
   .profile-copy { width: 100%; }
   .contact-line { justify-content: center; }

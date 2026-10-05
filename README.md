@@ -17,7 +17,7 @@ Adapted from [w-r-s/academic-homepage-template](https://github.com/w-r-s/academi
 | Publications and manuscripts | `data/publications.json` |
 | News | `data/news.json` |
 | Awards | `data/honors.json` |
-| Avatar and university emblem | `assets/` |
+| Profile photo and university emblem | `assets/` |
 | Publication figures | `assets/publications/` |
 | Template footer imagery | `assets/landscape/` |
 | Styling | `styles.css` |
@@ -45,6 +45,7 @@ Academic content is rendered into static HTML and remains readable without JavaS
 
 - [w-r-s/academic-homepage-template](https://github.com/w-r-s/academic-homepage-template): layout, base styles, publication presentation, and footer imagery.
 - [AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io): reference for the owner's preferred sans-serif font stack.
-- Personal content and avatar: the owner's previous website and supplied CV.
+- Personal content: the owner's previous website and supplied CV.
+- Profile photo and paper figures: assets supplied by the owner.
 
 The earlier AcaNova-X version is retained in the repository's Git history.
