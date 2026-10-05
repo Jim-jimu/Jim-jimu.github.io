@@ -658,7 +658,7 @@ p { margin: 0 0 14px; }
 .tag-count { display: inline-block; width: 18px; height: 18px; line-height: 18px; border-radius: 50%; text-align: center; margin-left: 5px; font-size: 11px; font-weight: 700; background: rgba(251,165,36,.14); }
 .tag-btn.active .tag-count { background: rgba(255,255,255,.22); }
 .publications-list { display: grid; gap: 24px; }
-.publication-card { display: grid; grid-template-columns: 260px minmax(0,1fr); gap: 18px; padding: 0; border: 0; align-items: start; background: #fff; }
+.publication-card { display: grid; grid-template-columns: 260px minmax(0,1fr); gap: 18px; padding: 10px; border: 1px solid rgba(0,0,0,.14); border-radius: 8px; align-items: start; background: #fff; }
 .publication-visual { min-height: 132px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 14px; border: 1px solid #e5dcc9; border-radius: 5px; background: #faf7ed; color: #76542b; text-align: center; }
 .publication-visual .paper-wordmark { font-size: 26px; line-height: 1.2; font-weight: 700; letter-spacing: -.6px; }
 .publication-visual .paper-topic { margin-top: 12px; font-size: 10px; letter-spacing: .13em; text-transform: uppercase; }
