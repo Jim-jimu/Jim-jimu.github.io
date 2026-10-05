@@ -7,7 +7,7 @@ Personal academic homepage of Yike Jin, an undergraduate at Zhejiang University.
 - Personal blog: https://jinyike.dev/jimjimu-notes/
 - Blog repository and original history: https://github.com/Jim-jimu/jimjimu-notes
 
-Based on [AcaNova-X](https://github.com/yihangtao/AcaNova-X), with its two-column profile, research cards, publication list, and gold/slate visual style. Template source revision: `39b5544`. The homepage uses local styles, scripts, images, and system fonts at runtime. Typography follows [AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io): `Trebuchet MS`, with `Helvetica` and `sans-serif` fallbacks for both headings and body text.
+Adapted from [w-r-s/academic-homepage-template](https://github.com/w-r-s/academic-homepage-template), revision `3e688b9cdb8928aa90ce2469b932cd4661723f97`. It retains the template's compact 800px layout, profile and portrait, orange accents, date badges, publication cards, topic filters, author expansion, and landscape footer. The site uses the owner's preferred sans-serif stack: `Trebuchet MS`, `Helvetica`, `sans-serif`.
 
 ## Update content
 
@@ -18,14 +18,17 @@ Based on [AcaNova-X](https://github.com/yihangtao/AcaNova-X), with its two-colum
 | News | `data/news.json` |
 | Awards | `data/honors.json` |
 | Avatar and university emblem | `assets/` |
-| Styling | `styles.css`, `tailwind.config.cjs` |
+| Publication figures | `assets/publications/` |
+| Template footer imagery | `assets/landscape/` |
+| Styling | `styles.css` |
 | Page generation and archive pages | `build.mjs` |
+| Filters, author expansion, copy buttons, section navigation | `script.js` |
 
-Publication entries support `type` (`accepted` or `under-review`), `isFirstAuthor`, `showOnHomepage`, `featuredOrder`, and real resource links in `tags`. The homepage labels work under review explicitly. Ongoing work is shown separately in the research section. Keep publication status and research claims current when editing. News content and publication authors allow trusted HTML such as `<strong>`.
+Publication entries retain their acceptance/review status and authorship. `topics` controls the subject filters; `isFirstAuthor` includes co-first authors. `image`, `imageAlt`, `imageWidth`, and `imageHeight` display a supplied paper figure with a link to the full-size image. Without an image, `shortTitle` and `topic` form the typographic cover panels. Add real links under `tags`; no placeholder links are displayed. Author lists and news content accept trusted HTML such as `<strong>`.
 
 ## Preview and deploy
 
-Requires Node.js 22 or later.
+Requires Node.js 22 or later; no external packages or runtime CDNs are needed.
 
 ```sh
 npm ci
@@ -34,12 +37,14 @@ npm run build
 python3 -m http.server 4173 --directory dist
 ```
 
-Open http://localhost:4173/. Pushing to `main` builds the site and deploys `dist/` through GitHub Actions. Configure GitHub Pages to use **GitHub Actions** and set its custom domain to `jinyike.dev`. DNS for the domain remains pointed at GitHub Pages.
+Open http://localhost:4173/. Pushing to `main` builds and deploys `dist/` through GitHub Actions. GitHub Pages uses **GitHub Actions**, with custom domain `jinyike.dev`.
 
-The build renders publications, news, and awards into static HTML, so the academic content remains available without JavaScript. JavaScript adds mobile navigation and publication filters. The 404 page forwards older blog, gallery, project, and tag URLs to the migrated blog.
+Academic content is rendered into static HTML and remains readable without JavaScript. The legacy publication/news/awards URLs remain available with the new design. The 404 page continues forwarding old blog, gallery, project, and tag URLs to the migrated blog.
 
 ## Credits
 
-- [AcaNova-X](https://github.com/yihangtao/AcaNova-X) by Yihang Tao: original academic homepage template and base stylesheet.
-- Personal content and avatar adapted from the previous Jimjimu website and the owner's supplied CV.
-- [AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io): reference for the sans-serif font stack.
+- [w-r-s/academic-homepage-template](https://github.com/w-r-s/academic-homepage-template): layout, base styles, publication presentation, and footer imagery.
+- [AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io): reference for the owner's preferred sans-serif font stack.
+- Personal content and avatar: the owner's previous website and supplied CV.
+
+The earlier AcaNova-X version is retained in the repository's Git history.

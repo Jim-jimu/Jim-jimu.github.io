@@ -9,7 +9,17 @@
     "venue": "Under review",
     "year": "2026",
     "description": "Capability-driven collaboration among GUI agents through application-specific LoRA adapters, capability-aware routing, and expert composition. My work includes training 14 adapters and evaluating composition and retrieval baselines across IID, OOD, evolving-hub, and storage-constrained settings.",
-    "tags": []
+    "tags": [],
+    "shortTitle": "GUIHub",
+    "image": "assets/publications/guihub.png",
+    "imageAlt": "GUIHub framework: adapter profiling builds capability vectors, target-level adaptation selects LoRA adapters, and request-time serving reuses their weighted composition for GUI actions.",
+    "imageWidth": 1408,
+    "imageHeight": 662,
+    "topic": "GUI Agents",
+    "topics": [
+      "gui",
+      "llm"
+    ]
   },
   {
     "title": "MethodMate: Supporting Novice HCI Researchers in Designing Quantitative Research Proposals with LLMs",
@@ -21,7 +31,13 @@
     "venue": "Under review",
     "year": "2026",
     "description": "A literature-grounded LLM system that supports quantitative research proposal design. I developed the full-stack system and contributed to formative research, workflow design, and three user studies.",
-    "tags": []
+    "tags": [],
+    "shortTitle": "MethodMate",
+    "topic": "HCI × LLMs",
+    "topics": [
+      "hci",
+      "llm"
+    ]
   },
   {
     "title": "Does Sycophancy Change Decisions? Effect of LLM Sycophancy on AI-Assisted Decision-Making",
@@ -33,6 +49,17 @@
     "venue": "CHI 2026",
     "year": "2026",
     "description": "Investigating how opinion agreement, direct praise, and self-deprecation affect AI-assisted decisions. I contributed to the experimental platform and a mixed-design online study with 106 participants.",
-    "tags": [{ "text": "Paper ↗", "link": "https://dl.acm.org/doi/10.1145/3772318.3790934" }]
+    "tags": [
+      {
+        "text": "Paper ↗",
+        "link": "https://dl.acm.org/doi/10.1145/3772318.3790934"
+      }
+    ],
+    "shortTitle": "LLM Sycophancy",
+    "topic": "AI × Decisions",
+    "topics": [
+      "hci",
+      "llm"
+    ]
   }
 ]
