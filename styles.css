@@ -634,6 +634,7 @@ p { margin: 0 0 14px; }
 .profile-divider { height: 1px; background: linear-gradient(to right, transparent, #ccc 20%, #ccc 80%, transparent); margin: 14px 0; }
 .contact-links { margin: 0; }
 .contact-line { gap: 5px; }
+.contact-item { display: inline-flex; align-items: center; gap: 5px; max-width: 100%; }
 .contact-links .email-link .contact-sub { color: #626975; opacity: 1; }
 .contact-separator { color: #333; margin: 0 2px; }
 .bio-copy { display: inline; background: none; border: 0; padding: 0; margin-left: 3px; font-size: 20px; vertical-align: 2px; cursor: pointer; }
